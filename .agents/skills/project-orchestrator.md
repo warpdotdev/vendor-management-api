@@ -38,7 +38,7 @@ For each **Ready** issue, launch a cloud agent using the `oz` CLI:
 ```bash
 oz agent run-cloud \
   --environment "$ENVIRONMENT_ID" \
-  --skill "warpdotdev/vendor-management-api:linear-ticket-implementer" \
+  --skill "warpdotdev/vendor-management-api:.agents/skills/linear-ticket-implementer.md" \
   --prompt "Implement Linear issue <ISSUE_ID>: <ISSUE_TITLE>. Read the full issue details from Linear before starting." \
   --mcp "$MCP_CONFIG"
 ```
